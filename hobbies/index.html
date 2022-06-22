@@ -14,7 +14,7 @@
 	  
 	  </title>
 	  
-	  <link rel="stylesheet" href="styles1.css">
+	  <link id=styleLink rel="stylesheet" href="style1.css">
 	  
 
     </head>
@@ -23,35 +23,40 @@
     <body>
 
       <header>
-	  
-	    My Favorite Things
-	  <br>
+	   <center> Russell Bullock's Favorite Things</center>
 	  
 
 	  </header>
-	  <br>
-	  <br>
-	  <Button>
+
 	  
-	  Style Sheet 1
+	  
+	
+	  
+	  
+	  
+	  
+	 <center> 
+	  
+	  <Button type="button" onclick="document.getElementById('styleLink').href='style1.css'">	  
+	  "Style1"	  
+	  </button>
+	 
+	  <Button type="button" onclick="document.getElementById('styleLink').href='style2.css'">
+	  
+	  "This is Button 2"
+	  
+	  </button>
+	  
+	  <Button type="button" onclick="document.getElementById('styleLink').href='style3.css'">
+	  
+	  "This is Button 3"
 	  
 	  </button>
 	  <br>
-	  <Button>
 	  
-	  Style Sheet 2
+	  </center>
 	  
-	  </button>
-	  <br>
-	  <Button>
-	  
-	  Style Sheet 3
-	  
-	  </button>
-	  <br>
-	  
-	  
-	  <div>
+	  <div id=hobby1>
 	    <h1>Chess</h1>
 	  
 		<details>
@@ -72,8 +77,8 @@
 		  <summary>
 		  Who can learn to play?
 		  </summary>
-			<p style="color:green">
-			  <img src="images/chess/youngandold1.jpg" alt="chess board" width="220">
+			<p>
+			  <img src="images/chess/youngandold1.jpg" alt="chess board" width="200">
 			  <br>
 			  Chess is a great game for a wide range of ages. 
 			</p>
@@ -97,6 +102,12 @@
 		
 		
 		
+		
+		
+	
+		
+		
+		
 		<img src="images/chess/chessboard1.avif" alt="chess board" width="500">
 		<img src="images/chess/chessclub1.jpg" alt="chess club" width="400">
 		<img src="images/chess/gambit1.jpg" alt="queens gambit" width="300">
@@ -116,7 +127,7 @@
 		
 	  </div>
 	  
-	  <div>
+	  <div id=hobby2>
 	    <h1>Watching Movies</h1>
 	  
 		<details>
@@ -125,13 +136,11 @@
 		  </summary>
 			<p>
 			 Actually, it is probably easier for me to list the types of movies I do not care for. 
-			  </p>
-			  <p>
-			    <font size="5" face="arial" color="red">
+			  
+			  <p style="font-size:30px">
 			     Musicals!
-				</font>
 			  </p> 
-			  <p>
+			  
 			 Well, to be more clear those movies in which they sing EVERYTHING. 
 			 <br>
 			 I like The Sound of Music, Frozen, and others like that.
@@ -140,12 +149,13 @@
 		</details>
 	
 	
+		<center>
 		
 		<img src="animations/favoritemovie.gif" alt="chess board" width="400">
+		<img src="animations/youlikemovies.gif" alt="chess board" width="550">
 		<img src="images/movies/likemovies.jpg" alt="I Really Like Movies" width="200">
 		
-		<img src="animations/youlikemovies.gif" alt="chess board" width="550">
-		
+		</center>
 		<br>
 		
 		<h4> Not sure what to watch??? <a href="https://www.suggestmemovie.com/">Get movie suggestions here.</a></h4>
@@ -160,7 +170,7 @@
 	  </div>
 	  
 	  
-	  <div>
+	  <div id=hobby3>
 	    <h1>Parasailing</h1>
 	  
 		<details>
@@ -170,23 +180,23 @@
 			<p>
 			 a sport where one or more persons are towed through the air behind a vehicle (usually a boat) while attached to a device similar to a parachute. Participants are lifted into the air, where they are ably to maintain their altitude via winds in a kite-like interaction. 
 			</p>
+			<center>
 				<video width="400" controls>
 					<source src="images/parasailing/paravid.mp4" type="video/mp4" alt="Your browser does not support HTML video.">
 				</video>
 
-				<br>
-
 				<iframe width="427" height="240" src="https://www.youtube.com/embed/wfr_7p5XThs" title="Parasailing | Destin, FL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 			<p> Videos courtesy of youtube.com </p>
-		 
+		 </center>
 			</p>
 			
 			
 		  </details>
 		
 		
-		  <details>
+		  <details style="color:yellow">
+			
 		    <summary> 
 			  Parasailing can also be...
 		    </summary>
@@ -201,8 +211,8 @@
 			 *And the list goes on	
 			 <br>
 			 <h4> Learn more about the dangers of parasailing at<br>
-				<a href="https://www.forbes.com/sites/tanyamohn/2014/07/20/parasailing-lack-of-regulation-inadequate-training-and-faulty-equipment-cause-serious-accidents-a-new-report-finds/?sh=6315ea975b3f">Forbes</a>
-				<a href="https://www.triumphboats.com/is-parasailing-dangerous/">TriumphBoats</a>
+				<a href="https://www.forbes.com/sites/tanyamohn/2014/07/20/parasailing-lack-of-regulation-inadequate-training-and-faulty-equipment-cause-serious-accidents-a-new-report-finds/?sh=6315ea975b3f" >Forbes</a>
+				<a href="https://www.triumphboats.com/is-parasailing-dangerous/" alt=parasailing video 2>TriumphBoats</a>
 			 </h4>
 		 
 		
@@ -238,9 +248,9 @@
 
 	  
 	  <footer>
-		<p>This page created by: Russell Bullock for "EDCM 610 at <a href="https://www.mercer.edu/">Mercer University</a>
+		<p>This page created by: Russell Bullock for EDCM 610 at <a href="https://www.mercer.edu/">Mercer University</a>
 			<br>
-			Copyright 2022
+			&copy; 2022
 		</p>
 	  </footer>
 
